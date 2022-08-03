@@ -24,7 +24,7 @@
     <form name="inicio" method="post" action="salir.php">
     <?php
     include("sesiones.php");
-    echo $_SESSION['user'];
+    echo "Bienvenido usuario: ".$_SESSION['user'];
     ?>
 
     <div>

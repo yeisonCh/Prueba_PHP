@@ -21,24 +21,26 @@
 
 </head>
 <body>
-    <form name="inicio" method="post" action="accesoUsuario.php">
+    <form name="inicio" method="post" action="agregarEncuesta.php">
     <?php
 
     error_reporting(E_STRICT ^ E_NOTICE);
 
     if($_GET["error"]=="si"){
-        echo"<span>Verifica Tus datos</span>";
+        echo"<span>Se registro encuesta satisfactoriamente</span>";
     }else{
-        echo"Introduce tus datos";
+        echo"Introduce los datos";
     }
+
     
+    include("sesiones.php");
     ?>
 
     <div>
         <br>
         <label for="usuario">Usuario: </label>
         <br>
-        <input type="" name="usuario_txt" >
+        <input type="" name="usuario_txt" readonly value="<?php echo $_SESSION['user']; ?>" >
         <br><br>
         <label for="email">Email: </label>
         <br>
@@ -48,16 +50,16 @@
         <br>
         <textarea name="comentarios_txa" required="required"></textarea>
         <br><br>
-        <label for="txt">Marca Pc: </label>
+        <label for="marca">Marca Pc: </label>
         <br>
-        <input type="" name="marca_txt">
+        <select name="marca_slc"><option value="">-------</option><?php include("marca.php");?></select>
         <br><br>
         <label for="date">Fecha: </label>
         <br>
-        <input type="date" name="date_txt">
+        <input type="" readonly name="date_txt" value="<?php echo $fecha = date('m-d-Y h:i:s a', time());?>">
         <br><br>
         <input type="submit" name="enviar_btn" value="Registrar consulta">
-
+    
     </div>
 
     </form>
