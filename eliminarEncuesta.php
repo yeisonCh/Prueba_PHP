@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver Encuestas</title>
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
     <?php
 
@@ -18,6 +19,8 @@
 
 
 <body>
+  <h1>Encuestas</h1>
+  <h2>Pulse el boton para eliminar encuestas</h2>
 
 <table width="941" align = "center">
   <tr>
@@ -63,8 +66,15 @@ while ($registro = $ejecutar->fetch_assoc())
     }
 
     ?>
-
+    <section>
 <button onclick="location.href='principal.php'">Regresar</button>
+<button onclick="location.href='salir.php'">Salir</button>
+    
+    </section>
+
+    <footer>
+    <p>Yeison Andres Chaparro  3214634601   https://github.com/yeisonCh</p>
+  </footer>
 
     
 </body>

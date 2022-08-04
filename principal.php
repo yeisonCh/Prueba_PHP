@@ -6,46 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index prueba</title>
     
-    <style>
-        form{
-            margin:0 auto;
-            text-align: center;
-            width: 400px;
-        }
-
-        span{
-            color: #f00;
-            font-size: 2em;
-        }
-    </style>
+    <link href="css/estilo.css" rel="stylesheet">
+    
 
 </head>
 <body>
-    <form name="inicio" method="post" action="salir.php">
+    
     <?php
     include("sesiones.php");
     echo "Bienvenido usuario: ".$_SESSION['user'];
     ?>
 
+<header> 
+    <hgroup>
+        <h1>Menú principal aplicación encuentas</h1>
+        <h2>Seleccione la acción deseada</h2>
+    </hgroup>
+
+</header>
+
+<form name="inicio" method="post" action="salir.php">
+    <section>
+        <figure>
+                <a href="encuestaFormulario.php"><img src="imagenes/encuesta.png" width="100" height="120"/></a>
+                    <figcaption>Encuesta</figcaption>   
+                </figure>
+                    
+                <figure>
+                    <a href="verEncuestas.php"><img src="imagenes/verEncuesta.png" width="100" height="120"/></a>
+                        <figcaption>Ver Encuestas:  </figcaption>
+                </figure>
+
+                <figure>
+                    <a href="eliminarEncuesta.php"><img src="imagenes/eliminar.png" width="100" height="120"/></a>
+                <figcaption>Eliminar Encuestas:</figcaption>
+                </figure>
+
+    </section>
+        
     <div>
-        <br>
-        <label for="usuario">Encuesta : </label>
-        <br>
-        <a href="encuestaFormulario.php"><img src="imagenes/encuesta.png" width="80" height="95"/></a>
-        <br><br>
-        <label for="encuesta">Ver Encuestas: </label>
-        <br>
-        <a href="verEncuestas.php"><img src="imagenes/verEncuesta.png" width="80" height="95"/></a>
-        <br><br>
-        <label for="eliminar">Eliminar Encuestas: </label>
-        <br>
-        <a href="eliminarEncuesta.php"><img src="imagenes/eliminar.png" width="80" height="95"/></a>
-        <br><br>
         <input type="submit" name="enviar_btn" value="Salir">
-
     </div>
+    
+        
 
-    </form>
+    
+
+</form>
+
+<footer>
+    <p>Yeison Andres Chaparro  3214634601   https://github.com/yeisonCh</p>
+</footer>
     
     
 </body>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-08-2022 a las 12:38:19
+-- Tiempo de generación: 04-08-2022 a las 14:14:02
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -41,8 +41,12 @@ CREATE TABLE `encuesta` (
 --
 
 INSERT INTO `encuesta` (`id`, `documento`, `email`, `comentario`, `marca`, `fecha`) VALUES
-(2, 74378570, 'yeison@hotmail.com', 'primer comentario', '0', '2022-08-03'),
-(3, 74378570, 'yeison@hotmail.com', 'Segundo comentario', 'HP', '2022-08-03');
+(3, 74378570, 'yeison@hotmail.com', 'Segundo comentario', 'HP', '2022-08-03'),
+(4, 74378570, 'yeison@hotmail.com', 'otro comentario', 'Lenovo', '2022-08-03'),
+(5, 105232, 'otrousuario@hotmail.com', 'primer comentario de este usuario', 'Asus', '2022-08-04'),
+(6, 105232, 'otrousuario@hotmail.com', 'segundo comentario ', 'Lenovo', '2022-08-04'),
+(7, 46452, 'sandra@gmail.ar', 'primer comentario de este usuario', 'Asus', '2022-08-04'),
+(8, 46452, 'sandra@gmail.ar', 'segundo comentario de este usuario ', 'Samsung', '2022-08-04');
 
 -- --------------------------------------------------------
 
@@ -121,7 +125,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `encuesta`
 --
 ALTER TABLE `encuesta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `pc`

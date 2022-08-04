@@ -1,0 +1,84 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+
+        form{
+            margin:0 auto;
+            text-align: center;
+            width: 800px;
+        }
+
+        span{
+            color: #f00;
+            font-size: 2em;
+        }
+
+        body{
+            font-size: 62.54;
+        }
+h1{
+    
+    font: normal 1.5em verdana;
+    width: 35%;
+    border-radius: 10px;
+    margin: 15px auto;
+    margin: 15px auto;
+    padding: 15px;
+    color:indigo;
+    box-shadow:dimgray 5px 5px 10px;
+    text-align: center;
+}
+
+h2{
+    font: bold 1em verdana ;
+    margin: 15px 10px;
+    padding: 5px 0 5px;
+}
+section{
+    width: 91%;
+    border-top: 1px dashed #999;
+    margin: 20px auto;
+    
+}
+
+figure{
+    float: left;
+
+}
+
+figure img{
+    padding: 4px;
+    background: #666;
+    border-radius: 10px;
+    box-shadow: #666 5px 5px 10px;
+    
+}
+
+figcaption{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: .5;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+div{
+    clear: both;
+}
+footer{
+padding-top: 200px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: small;
+color:dimgray;
+margin-left: 20px;
+
+}

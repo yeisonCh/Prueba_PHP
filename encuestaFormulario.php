@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index prueba</title>
+    <title>Encuesta </title>
+    <link href="css/estilo.css" rel="stylesheet">
     
-    <style>
-        form{
-            margin:0 auto;
-            text-align: center;
-            width: 400px;
-        }
-
-        span{
-            color: #f00;
-            font-size: 2em;
-        }
-    </style>
+   
 
 </head>
 <body>
     <form name="inicio" method="post" action="agregarEncuesta.php">
+
+    <h1>Encuesta </h1>
     <?php
 
     error_reporting(E_STRICT ^ E_NOTICE);
@@ -29,14 +21,14 @@
     if($_GET["error"]=="si"){
         echo"<span>Se registro encuesta satisfactoriamente</span>";
     }else{
-        echo"Introduce los datos";
+        
     }
 
     
     include("sesiones.php");
     ?>
 
-    <div>
+    <section>
         <br>
         <label for="usuario">Usuario: </label>
         <br>
@@ -60,10 +52,16 @@
         <br><br>
         <input type="submit" name="enviar_btn" value="Registrar consulta">
     
-    </div>
+</section>
+<button onclick="location.href='principal.php'">Regresar</button>
+<button onclick="location.href='salir.php'">Salir</button>
+
 
     </form>
     
+    <footer>
+    <p>Yeison Andres Chaparro  3214634601   https://github.com/yeisonCh</p>
+    </footer>
     
 </body>
 </html>
