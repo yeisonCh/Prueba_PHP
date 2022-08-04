@@ -29,7 +29,7 @@
     if($_GET["error"]=="si"){
         echo"<span>Verifica Tus datos</span>";
     }else{
-        echo"Introduce tus datos";
+        echo"<span>Iniciar Sesión</span>";
     }
     
     ?>
@@ -42,7 +42,7 @@
         <br><br>
         <label for="password">Contraseña: </label>
         <br>
-        <input type="text" name="password_txt" placeholder="Escribe tu contraseña" title="Ingresa tu contraseña" required="required">
+        <input type="password" name="password_txt" placeholder="Escribe tu contraseña" title="Ingresa tu contraseña" required="required">
         <br><br>
         <input type="submit" name="enviar_btn" value="Ingresar">
         <br><br>

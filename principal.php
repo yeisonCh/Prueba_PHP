@@ -33,13 +33,13 @@
         <br>
         <a href="encuestaFormulario.php"><img src="imagenes/encuesta.png" width="80" height="95"/></a>
         <br><br>
-        <label for="password">Ver Encuestas: </label>
+        <label for="encuesta">Ver Encuestas: </label>
         <br>
-        <a href="encuestaFormulario.php"><img src="imagenes/verEncuesta.png" width="80" height="95"/></a>
+        <a href="verEncuestas.php"><img src="imagenes/verEncuesta.png" width="80" height="95"/></a>
         <br><br>
-        <label for="password">Eliminar Encuestas: </label>
+        <label for="eliminar">Eliminar Encuestas: </label>
         <br>
-        <a href="encuestaFormulario.php"><img src="imagenes/eliminar.png" width="80" height="95"/></a>
+        <a href="eliminarEncuesta.php"><img src="imagenes/eliminar.png" width="80" height="95"/></a>
         <br><br>
         <input type="submit" name="enviar_btn" value="Salir">
 

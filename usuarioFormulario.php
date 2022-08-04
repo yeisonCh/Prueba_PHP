@@ -29,7 +29,7 @@
     if($_GET["error"]=="si"){
         echo"<span>Se registro con exito</span>";
     }else{
-        echo"Introduce tus datos";
+        
     }
     
     ?>
