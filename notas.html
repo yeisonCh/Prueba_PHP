@@ -29,4 +29,18 @@ $fecha = date('d-m-Y', time());
 $fechaActual = date('d-m-Y');
    
   echo $fechaActual;
+
+// funcion que nos devuelve un array
+function persona(){
+    $nombre= "Andres";
+    $apellido="Chaparro";
+    $edad= 10;
+
+    return array($nombre,$apellido,$edad);
+
+}
+
+list($nom,$ape,$ed)=persona();
+
+echo "Hola doy una $nom mi apellido es $ape y mi edad es $ed";
 ?>
