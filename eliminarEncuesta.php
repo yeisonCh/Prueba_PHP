@@ -57,6 +57,7 @@ while ($registro = $ejecutar->fetch_assoc())
 <?php
 
     error_reporting(E_STRICT ^ E_NOTICE);
+    error_reporting(0);
 
     if($_GET["error"]=="si"){
         echo"<span>Se ha eliminado el registro</span>";
@@ -67,6 +68,7 @@ while ($registro = $ejecutar->fetch_assoc())
 
     ?>
     <section>
+      <br><br>
 <button onclick="location.href='principal.php'">Regresar</button>
 <button onclick="location.href='salir.php'">Salir</button>
     

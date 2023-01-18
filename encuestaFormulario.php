@@ -16,8 +16,9 @@
     <h1>Encuesta </h1>
     <?php
 
+    
     error_reporting(E_STRICT ^ E_NOTICE);
-
+    error_reporting(0);
     if($_GET["error"]=="si"){
         echo"<span>Se registro encuesta satisfactoriamente</span>";
     }else{

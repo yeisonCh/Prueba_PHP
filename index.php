@@ -24,8 +24,9 @@
     <form name="inicio" method="post" action="accesoUsuario.php">
     <?php
 
-    error_reporting(E_STRICT ^ E_NOTICE);
-
+        error_reporting(0);
+    //error_reporting(E_STRICT ^ E_NOTICE);
+       
     if($_GET["error"]=="si"){
         echo"<span>Verifica Tus datos</span>";
     }else{

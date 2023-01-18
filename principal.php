@@ -15,6 +15,19 @@
     <?php
     include("sesiones.php");
     echo "Bienvenido usuario: ".$_SESSION['user'];
+    echo '<br><br>';
+    echo "Tiempo: ".$_SESSION['tiempo'];
+    echo '<br><br>';
+    echo 'Ahora: '.$_SESSION['ahora']= date("Y-n-j H:i:s");
+
+
+
+
+    $tiempo_transcurrido = (strtotime($_SESSION['ahora'])-strtotime($_SESSION['tiempo']));
+
+    echo '<br><br>';
+    echo 'diferencia: '.$tiempo_transcurrido;
+
     ?>
 
 <header> 

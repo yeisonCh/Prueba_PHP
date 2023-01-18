@@ -20,8 +20,9 @@
 
 <body>
   <h1>Lista de encuestas</h1>
-
+  
   <section>
+    <br><br>
     <table width="811" border="1" align= "center">
       <tr>
         <td width="71">Documento</td>
@@ -52,6 +53,7 @@
   </section>
 <section>
 
+<br><br>
 <button onclick="location.href='principal.php'">Regresar</button>
 <button onclick="location.href='salir.php'">Salir</button>
 </section>
